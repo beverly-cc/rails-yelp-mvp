@@ -1,9 +1,9 @@
 class ReviewsController < ApplicationController
-  def new
-    # collect info for new review (by restaurant id)
-    @restaurant = Restaurant.find(params[:restaurant_id])
-    @review = Review.new
-  end
+  # def new
+  #   # collect info for new review (by restaurant id)
+  #   @restaurant = Restaurant.find(params[:restaurant_id])
+  #   @review = Review.new
+  # end
 
   def create
     # add new review to restaurant db

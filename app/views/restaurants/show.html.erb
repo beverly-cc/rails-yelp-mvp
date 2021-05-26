@@ -9,7 +9,6 @@
     <p>Review: <%= review.content %></p>
   <% end %>
 </div>
-
-<h3><%= link_to "Add a new review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %></h3>
+<%= render './reviews/form' %>
 <br><br><br>
-<h3><%= link_to "Back to restaurant listings", restaurants_path, class: "btn btn-primary" %></h3>
+<h3><%= link_to "Back to restaurant listings", restaurants_path, class: "btn btn-light" %></h3>
